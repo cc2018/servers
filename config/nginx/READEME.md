@@ -82,10 +82,10 @@ server {
 
 ```
 vi /etc/sysconfig/iptables
-# 添加如下一行
+# 添加如端口号或端口区间
 -A INPUT -p tcp -m state --state NEW -m tcp --dport 80 -j ACCEPT
 -A INPUT -p tcp -m state --state NEW -m tcp --dport 8080 -j ACCEPT
--A INPUT -p tcp -m state --state NEW -m tcp --dport 8081 -j ACCEPT
+-A INPUT -p tcp -m state --state NEW -m tcp --dport 8091:8099 -j ACCEPT
 service iptables restart
 ```
 
