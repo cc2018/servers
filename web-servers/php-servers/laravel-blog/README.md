@@ -20,3 +20,9 @@ cd ~/pro/webs/web-servers/php-servers
 $HOME/.composer/vendor/bin/laravel new laravel-blog
 
 ```
+
+### Auth 系统
+
+激活登录功能
+
+`php artisan make:auth`
