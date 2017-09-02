@@ -15,12 +15,14 @@
     <link rel="icon" href="{{ asset('img/logo.png') }}">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/index.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/common.css') }}" rel="stylesheet">
+    @yield('head')
 </head>
 <body>
     @yield('content')
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    @yield('foot')
 </body>
 </html>

@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use GrahamCampbell\Markdown\Facades\Markdown;
 
 class HomeController extends Controller
 {

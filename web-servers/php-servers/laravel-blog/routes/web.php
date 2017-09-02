@@ -23,3 +23,8 @@ Route::group(['middleware' => 'auth', 'namespace' => 'Admin', 'prefix' => 'admin
     Route::get('/', 'HomeController@index');
     Route::resource('article', 'ArticleController');
 });
+
+Route::group(['namespace' => 'Posts', 'prefix' => 'posts'], function() {
+    Route::get('/', 'HomeController@index');
+    Route::get('/{name}', 'PostsController@index');
+});

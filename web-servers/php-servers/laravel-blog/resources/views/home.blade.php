@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('head')
+<link href="{{ asset('css/index.css') }}" rel="stylesheet">
+@endsection
+
 @section('content')
 <div class="container-fluid header">
     @include('widget.nav')
