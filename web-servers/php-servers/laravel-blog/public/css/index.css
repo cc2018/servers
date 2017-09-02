@@ -1,0 +1,136 @@
+body {
+    font-size: 16px;
+    font-family: Open Sans,sans-serif;
+    background: #fff;
+}
+.header {
+    padding-bottom: 60px;
+    color: #fff;
+    background: #02ccba;
+    background: linear-gradient(160deg,#02ccba,#aa7ecd);
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+}
+.navbar-default {
+    color: #fff;
+    border: none;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-text {
+    color: #fff;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+    opacity: .8
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+    height: auto;
+    font-size: 28px;
+    line-height: 1;
+}
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+    color: #fff;
+}
+.navbar-default .navbar-brand img {
+    display: inline;
+    height: 36px;
+    vertical-align: sub;
+}
+.navbar-default .navbar-right {
+    margin-top: 5px;
+}
+
+.desc,
+.desc-img {
+    margin-top: 30px;
+}
+.desc h1 {
+    font-size: 52px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    font-weight: 400;
+    margin: 30px 0 10px;
+}
+.desc-img img {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+}
+.features .row {
+    margin: 120px auto;
+}
+.features .works-image {
+    width: 100%;
+}
+.features h2 {
+    font-size: 28px;
+    font-weight: 300;
+    color: #02b3e4;
+    margin-top: 40px;
+}
+.features p {
+    color: #525c65;
+}
+.features .question h2 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer {
+
+}
+.footer .contact {
+    background-color: #333;
+    color: #fff;
+}
+.footer .contact .contact-us {
+    margin: 40px 15px;
+}
+.footer .contact .address {
+    padding-top: 10px;
+}
+.footer .contact .code {
+    max-width: 100px;
+}
+.footer .copyright {
+    margin: 30px 0;
+}
+@media (min-width: 1200px) {
+    .footer {
+        margin-top: 60px;
+    }
+    .features h2 {
+        margin-top: 80px;
+    }
+}
+@media (max-width: 768px) {
+    .navbar-toggle {
+        margin-top: 17px;
+    }
+    .desc h1 {
+        font-size: 36px;
+        margin: 0;
+    }
+    .desc,
+    .desc-img {
+        margin-top: 0;
+    }
+    .desc h2 {
+        font-size: 28px;
+    }
+    .features .question h2 {
+        margin-top: 50px;
+    }
+    .features .row {
+        margin: 0 auto;
+    }
+
+    .footer {
+        margin-top: 50px;
+    }
+    .footer .contact .address {
+        padding-top: 0;
+    }
+}

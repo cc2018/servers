@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use GrahamCampbell\Markdown\Facades\Markdown;
 
 class HomeController extends Controller
 {
@@ -24,6 +25,6 @@ class HomeController extends Controller
     public function index()
     {
         # return view('home')->withArticles(\App\Article::all());
-        return view('home')->with('articles', \App\Article::all());
+        return view('home');
     }
 }
