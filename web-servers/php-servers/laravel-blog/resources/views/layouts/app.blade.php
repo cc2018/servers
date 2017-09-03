@@ -12,7 +12,7 @@
 
     <link rel="icon" href="{{ asset('img/logo.png') }}">
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="//cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ asset('css/common.css') }}" rel="stylesheet">
     @yield('head')
     <script>
@@ -30,7 +30,8 @@
     @yield('content')
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="//cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     @yield('foot')
 </body>
 </html>

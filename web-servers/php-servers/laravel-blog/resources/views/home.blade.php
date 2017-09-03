@@ -10,8 +10,8 @@
     @include('widget.nav')
     <div class="container">
         <div class="desc row col-md-6 col-xs-12">
-            <h1>All of your team knowledge at your fingertips.</h1>
-            <h2>Obie is a virtual assistant to help you make faster decisions, be more informed and get shit done without leaving</h2>
+            <h1>金榜教育：您身边的教育专家</h1>
+            <h2>提供小班教学、专业一对一、作业晚托（晚饭，专车接）、周托等专业服务</h2>
         </div>
         <div class="desc-img row col-md-6 col-xs-12">
             <img src="{{ asset('img/header.jpg') }}" width="100%" >
@@ -26,7 +26,7 @@
         <div class="col-xs-12 col-md-5 col-md-offset-1">
             <div class="text-div">
                 <h2 class="header-text">专业一对一服务</h2>
-                <p>Obie leverages machine learning technology to create a more relevant and personalized experience. The more you use Obie, the smarter he gets. Now you can have an expert that grows and scales with your internal knowledge.</p>
+                <p>见效块</p>
             </div>
         </div>
         <div class="col-xs-12 col-md-5">
