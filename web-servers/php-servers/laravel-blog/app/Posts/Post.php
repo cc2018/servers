@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Posts;
 
 use Illuminate\Database\Eloquent\Model;
 use GrahamCampbell\Markdown\Facades\Markdown;
@@ -9,10 +9,9 @@ class Post
 {
     //
     private $post_path;
-    public $title;
-    public $body;
-    function __construct($path) {
+    function __construct($path, $parse_content) {
         $this->post_path = $path;
+        $this->parse_content = $parse_content;
     }
     function parse_post() {
         $post_file = fopen($this->post_path, 'r');
@@ -24,15 +23,22 @@ class Post
         $content = $matches[2];
 
         preg_match('/title:(.*?)[\r\n|\n]/i', $head, $matches);
-        $this->title = $matches[1].trim(' ');
+        $this->title = trim($matches[1]);
 
         preg_match('/author:(.*?)[\r\n|\n]/i', $head, $matches);
-        $this->author = $matches[1].trim(' ');
+        $this->author = trim($matches[1]);
 
         preg_match('/date:(.*?)[\r\n|\n]/i', $head, $matches);
-        $this->date = $matches[1].trim(' ');
+        $this->date = trim($matches[1]);
+        $this->year = ((int)substr($this->date, 0, 4));
+        $this->month = ((int)substr($this->date, 5, 2));
 
-        $this->content = Markdown::convertToHtml($content);
+        $this->url = '/posts/' . basename($this->post_path, '.md');;
+
+        if ($this->parse_content)
+        {
+            $this->content = Markdown::convertToHtml($content);
+        }
 
         fclose($post_file);
     }

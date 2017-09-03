@@ -26,5 +26,5 @@ Route::group(['middleware' => 'auth', 'namespace' => 'Admin', 'prefix' => 'admin
 
 Route::group(['namespace' => 'Posts', 'prefix' => 'posts'], function() {
     Route::get('/', 'HomeController@index');
-    Route::get('/{name}', 'PostsController@index');
+    Route::get('/{name}', 'PostController@index');
 });

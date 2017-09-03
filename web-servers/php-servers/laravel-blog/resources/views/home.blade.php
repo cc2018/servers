@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('head')
+<title>{{ config('app.name', 'Laravel') }}</title>
 <link href="{{ asset('css/index.css') }}" rel="stylesheet">
 @endsection
 
@@ -70,7 +71,7 @@
                     <p>报名热线/微信：18961227865</p>
                 </div>
                 <img class="code col-xs-3 col-md-2" src="{{ asset('/img/code.jpg') }}">
-                <p class="copyright col-xs-12 col-md-12">Copyright ©2017 常州艾尔琳·金榜教育.</p>
+                <p class="copyright col-xs-12 col-md-12">Copyright ©2017 {{ config('app.name', 'Laravel') }}版权所有.</p>
             </div>
         </div>
     </div>

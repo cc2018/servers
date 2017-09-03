@@ -26,9 +26,9 @@
             <!-- Right Side Of Navbar -->
             <ul class="nav navbar-nav navbar-right">
                 <!-- Authentication Links -->
-                <li><a href="/articles">专栏</a></li>
-                <li><a href="/articles">课程咨询</a></li>
-                <li><a href="/articles">关于我们</a></li>
+                <li><a href="{{ url('/posts') }}">专栏</a></li>
+                <li><a href="{{ url('/') }}">课程咨询</a></li>
+                <li><a href="{{ url('/') }}">关于我们</a></li>
                 @if (Auth::guest())
                     <li><a href="{{ route('login') }}">登录</a></li>
                     <li><a href="{{ route('register') }}">注册</a></li>

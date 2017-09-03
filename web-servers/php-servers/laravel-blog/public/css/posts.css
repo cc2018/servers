@@ -1,3 +1,4 @@
+
 body {
     background-color: #f7f7f7;
 }
@@ -22,6 +23,13 @@ body {
 }
 .post-content img {
     max-width: 100%;
+}
+.post-item {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
 }
 .footer {
     padding: 25px 0 10px;

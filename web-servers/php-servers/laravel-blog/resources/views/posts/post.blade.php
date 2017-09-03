@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('head')
+<title>{{ isset($post->title) ? $post->title : config('app.name', 'Laravel') }}</title>
 <link href="{{ asset('css/post.css') }}" rel="stylesheet">
 @endsection
 
@@ -35,7 +36,7 @@
 </div>
 <footer class="footer" role="contentinfo">
 	<div class="container">
-		<p class="copyright">Copyright ©2017 金榜教育版权所有.</p>
+		<p class="copyright">Copyright ©2017 {{ config('app.name', 'Laravel') }}版权所有.</p>
 	</div>
 </footer>
 @endsection

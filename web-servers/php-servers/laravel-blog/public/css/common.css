@@ -3,7 +3,15 @@ body {
     font-family: Open Sans,sans-serif;
     background: #fff;
 }
-
+.common-nav {
+    position: relative;
+    min-height: 50px;
+    border: 1px solid transparent;
+    background: #02ccba;
+    background: linear-gradient(160deg,#02ccba,#aa7ecd);
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+}
 .navbar-default {
     color: #fff;
     border: none;
