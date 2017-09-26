@@ -27,6 +27,7 @@ hs_err_pid*
 /storage/*.key
 /__pycache__
 /vendor
+*/venv/
 /.idea
 /.vagrant
 Homestead.json
